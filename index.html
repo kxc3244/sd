@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Bootstrap</title>
+</head>
+<body>
+
+<nav class="navbar bg-light navbar-light navbar-expand-sm">
+  <div class="container">
+      <a class="navbar-brand d-none d-sm-inline-block" href="#">
+        <img src="C:\Users\kevin\Downloads\final_logo.svg" style="width: 60px;" alt="Stream Hopper Logo">
+      </a>
+      <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#">Tutorial</a>
+          <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link" href="#">Team</a>
+          <a class="nav-item nav-link" href="#">Testimonials</a>
+      </div>
+      <!-- <span class="navbar-text d-none d-xl-inline-block">The best in traditional and alternative medicine</span> -->
+  </div>
+</nav>
+
+<div class="jumbotron d-flex align-items-center flex-column justify-content-center h-100 bg-dark text-white" id="header">
+  <img src="C:\Users\kevin\Downloads\final_logo.svg" style="width: 20rem;" alt="Stream Hopper Logo">
+  <div class="display-4"> Hello!<br>Welcome to Stream Hoppers!!<br>Ready to twitch your stream?</div>
+  <a class="btn btn-primary btn-lg mt-5" href="#controls" role="button">Let's do it!</a>
+
+</div>
+
+<style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,html {
+    height: 100%;
+}
+
+.list-group-item.active{
+  background-color: black;
+  border-color: black;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #d17171;
+	border-radius: .4em;
+  width: 20%;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 4px solid transparent;
+	border-right-color: #d17171;
+	border-left: 0;
+	margin-top: -4px;
+	margin-left: -4px;
+}
+
+</style>
+
+<div class="row justify-content-evenly mt-5" id="controls">
+  <div class="container col-3">
+    <div>
+      <ul class="list-group">
+        <li class="list-group-item active">Devices</li>
+        <li class="list-group-item">Smart Bulb <button type="button" class="close material-icons delete" aria-label="Close">&#xE5C9;</button></li>
+        <li class="list-group-item">Smart Bulb 2 <button type="button" class="close material-icons delete" aria-label="Close">&#xE5C9;</button></li>
+        <li class="list-group-item">LED Board <button type="button" class="close material-icons delete" aria-label="Close">&#xE5C9;</button></li>
+        <li class="list-group-item">Other <button type="button" class="close material-icons delete" aria-label="Close">&#xE5C9;</button></li>
+        <!-- <li class="list-group-item">ADD <strong>+</strong></li> -->
+        <button type="button" class="list-group-item material-icons">add</button>
+
+        <!-- <button type="button" class="btn-close" aria-label="Close">x</button> -->
+    </div> <!-- List of Devices-->
+  </div> <!-- List container -->
+
+  <div class="container col-3">
+    <div>
+      <ul class="list-group">
+        <li class="list-group-item active">Presets</li>
+        <li class="list-group-item">Default <button type="button" class="close material-icons delete" aria-label="Close">&#xE5C9;</button></li>
+        <li class="list-group-item">Office <button type="button" class="close material-icons delete" aria-label="Close">&#xE5C9;</button></li>
+        <li class="list-group-item">Stream <button type="button" class="close material-icons delete" aria-label="Close">&#xE5C9;</button></li>
+        <li class="list-group-item">Calm <button type="button" class="close material-icons delete" aria-label="Close">&#xE5C9;</button></li>
+        <!-- <li class="list-group-item">ADD <strong>+</strong></li> -->
+        <button type="button" class="list-group-item material-icons">add</button>
+    </div> <!-- List of Presets-->
+  </div> <!-- List Presets -->
+
+  <div class="container col-3">
+    <div>
+      <ul class="list-group">
+        <li class="list-group-item active">Triggers</li>
+        <li class="list-group-item">Chat <button type="button" class="close material-icons delete" aria-label="Close">&#xE5C9;</button></li>
+        <li class="list-group-item">Donation <button type="button" class="close material-icons delete" aria-label="Close">&#xE5C9;</button></li>
+        <li class="list-group-item">Channel Points <button type="button" class="close material-icons delete" aria-label="Close">&#xE5C9;</button></li>
+        <li class="list-group-item">Follows <button type="button" class="close material-icons delete" aria-label="Close">&#xE5C9;</button></li>
+        <!-- <li class="list-group-item">ADD <strong>+</strong></li> -->
+        <button type="button" class="list-group-item material-icons">add</button>
+    </div> <!-- List of Presets-->
+  </div> <!-- List Presets -->
+</div> <!-- Lists>
