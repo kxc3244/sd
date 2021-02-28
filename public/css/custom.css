@@ -47,7 +47,7 @@ p.cursor::after {
 }
 
 .jumbotron{
-  background-image: url('../images/bgimage.jpg');
+  background-image: url('bgimage.jpg');
 }
 
 html {
