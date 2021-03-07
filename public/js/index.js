@@ -81,9 +81,9 @@ if (!isBackspacing) {
   } else {
 
     isBackspacing = false;
-//     i = 0;
+    i = 0;
     isParagraph = false;
-    a = (a + 1) % ar.length; //Moves to next position in array, always looping back to 0
+    a = (a + 1); //% ar.length; //Moves to next position in array, always looping back to 0
     setTimeout(function(){ typeWriter(id, ar); }, 50);
 
   }
