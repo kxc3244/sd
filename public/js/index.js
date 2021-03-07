@@ -7,7 +7,7 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".
 var textArray = [
-"Hello!",
+"HHello!",
 "Welcome to Stream Hoppers!!",
 "Ready to twitch your stream?"
 ];
@@ -83,7 +83,7 @@ if (!isBackspacing) {
     isBackspacing = false;
     i = 0;
     isParagraph = false;
-    a = (a + 1) % ar.length; //Moves to next position in array, always looping back to 0
+    a = (a + 1) / ar.length; //Moves to next position in array, always looping back to 0
     setTimeout(function(){ typeWriter(id, ar); }, 50);
 
   }
